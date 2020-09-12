@@ -12,14 +12,14 @@ html
       tr
       td
         img(src=localImagePath)
-        font(size=7,weight=bold) #{current.temperature} &#8457
+        font(size=7,weight=bold) #{current.temperature} #{location.degreetype}
       tr
       td
         ul
           li #{current.skytext}
           li Humidity: #{current.humidity}%
           li Wind: #{current.winddisplay}
-    table(cellpadding=8)
+    table(cellpadding=8,width=400)
       tr
       each day in forecast
         td(align=center)
